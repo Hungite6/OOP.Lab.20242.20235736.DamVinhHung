@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="175.0" prefWidth="305.0">
+         <children>
+            <Label fx:id="lblTitle" alignment="CENTER" prefHeight="50.0" prefWidth="305.0" text="Title">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Label fx:id="lblCost" alignment="CENTER" prefHeight="50.0" prefWidth="305.0" text="Cost" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="305.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnAddToCart" mnemonicParsing="false" onAction="#btnAddToCartClicked" prefHeight="30.0" prefWidth="150.0" text="Add to Cart">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#btnPlayClicked" prefHeight="30.0" prefWidth="150.0" text="Play">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
